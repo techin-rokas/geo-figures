@@ -10,6 +10,9 @@
 
       Triangle triangle = new Triangle(10, 5);
       Console.WriteLine(triangle);
+
+      Rectangle rectangle = new Rectangle(-15, 25);
+      Console.WriteLine(rectangle);
     }
   }
 }
