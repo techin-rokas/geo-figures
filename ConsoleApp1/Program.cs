@@ -11,7 +11,15 @@
       Triangle triangle = new Triangle(10, 5);
       Console.WriteLine(triangle);
 
-      Rectangle rectangle = new Rectangle(-15, 25);
+      Rectangle rectangle = null;
+      try
+      {
+        rectangle = new Rectangle(-10, 25);
+      }
+      catch (ArgumentException ex)
+      {
+        Console.WriteLine(ex.Message);
+      }
       Console.WriteLine(rectangle);
     }
   }
