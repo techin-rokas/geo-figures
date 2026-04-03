@@ -34,10 +34,10 @@ namespace GeoFigures
     }
     public override string ToString()
     {
-      return $"Rectangle width is: {Width}, height is: {Height}, perimeter is: {Perimeter}, area is: {Area}";
+      return $"Rectangle Width is: {Math.Round(Width, 2)}, Height is: {Math.Round(Height, 2)}, Perimeter is: {Math.Round(GetPerimeter, 2)}, Area is: {Math.Round(GetArea, 2)}";
     }
 
-    public double Perimeter => 2 * (Width + Height);
-    public double Area => Width * Height;
+    public double GetPerimeter => 2 * (Width + Height);
+    public double GetArea => Width * Height;
   }
 }

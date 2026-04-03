@@ -13,7 +13,7 @@ namespace GeoFigures
 
     public override string ToString()
     {
-      return $"Circle radius is: {Radius}";
+      return $"Circle radius is: {Math.Round(Radius, 2)}";
     }
   }
 }

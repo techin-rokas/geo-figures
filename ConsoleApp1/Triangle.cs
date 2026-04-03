@@ -14,7 +14,15 @@ namespace GeoFigures
 
     public override string ToString()
     {
-      return $"Triangle base is: {TriangleBase}, height is: {Height}";
+      return $"Triangle Base is: {Math.Round(TriangleBase, 2)}, Height is: {Math.Round(Height, 2)}, Perimeter is: {Math.Round(GetPerimeter(), 2)}, Area is {Math.Round(GetArea, 2)}";
     }
+
+    public double GetPerimeter()
+    {
+      double hypotenuse = Math.Sqrt(Math.Pow(TriangleBase, 2) + Math.Pow(Height, 2));
+      return TriangleBase + Height + hypotenuse;
+    }
+
+    public double GetArea => TriangleBase * Height / 2;
   }
 }
