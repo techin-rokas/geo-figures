@@ -14,13 +14,16 @@
       Rectangle rectangle = null;
       try
       {
-        rectangle = new Rectangle(-10, 25);
+        rectangle = new Rectangle(10, 25);
       }
       catch (ArgumentException ex)
       {
         Console.WriteLine(ex.Message);
       }
       Console.WriteLine(rectangle);
+
+      // Console.WriteLine(rectangle.Perimeter);
+
     }
   }
 }

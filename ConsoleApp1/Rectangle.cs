@@ -34,7 +34,10 @@ namespace GeoFigures
     }
     public override string ToString()
     {
-      return $"Rectangle width is: {_width}, height is: {_height}";
+      return $"Rectangle width is: {Width}, height is: {Height}, perimeter is: {Perimeter}, area is: {Area}";
     }
+
+    public double Perimeter => 2 * (Width + Height);
+    public double Area => Width * Height;
   }
 }
